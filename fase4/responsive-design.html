@@ -1,0 +1,161 @@
+<!doctype html>
+
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Que es responsive design">
+
+  <title>Diseño de sitios web</title>
+
+  <link rel="stylesheet" href="assets/metodologias.css">
+  <link rel="stylesheet" href="assets/fontawesome-free/css/all.css">
+  <link rel="stylesheet" href="assets/fontawesome-free/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Diseño web: La interfaz de usuario, interacción humano - ordenador</h1>
+  </header>
+  <nav class="menu-area">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="#">Temas</a>
+        <ul class="dropdown-1">
+          <li><a href="metodologias.html">Experiencia de usuario y metodologías de desarrollo</a></li>
+          <li><a href="#">Responsive design</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Recursos</a>
+        <ul class="dropdown-1">
+          <li><a href="flex.html">Introducción al layout de páginas web con flexbox</a></li>
+          <li><a href="layout-con-flexbox.html">Layout de páginas web con flexbox</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Aprendizaje</a>
+        <ul class="dropdown-1">
+          <li><a href="evaluacion-ux.html">Autoevaluación User Experience</a></li>
+          <li><a href="evaluacion-responsive-design.html">Autoevaluación Responsive Design</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">Acerca de</a></li>
+    </ul>
+  </nav>
+  <div class="page-content">
+    <aside class="social-links">
+      <div>
+        <p>Sigue a la UNAD</p>
+      </div>
+      <div>
+        <a href="https://www.facebook.com/UniversidadUNAD" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="http://www.youtube.com/universidadunad" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.instagram.com/universidadunad/" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </aside>
+    <main>
+      <section>
+        <h2>Diseño responsivo</h2>
+        <p>
+          En 2021 según Asomovil se estima que más de la mitad de la población en Colombia ya cuenta con internet móvil, datos como éste 
+          y sumando la cantidad diversa de monitores en el mercado y la cantidad diferente de resoluciones en la que los usuarios pueden estar 
+          visualizando los sitios web, hace necesario que los diseñadores se preocupen en gran medida por el diseño responsivo.
+        </p>
+        <p>
+            Vamos a hacer un paréntesis para aclarar un punto importante; es importante distinguir la eXperiencia de usuario UX  
+            (<a href="metodologias.html"> ver el tema UX Design</a>) de la interfaz de usuario UI. Por ejemplo, en una página de recetas de 
+            cocina la UI puede ser perfecta si visualizamos toda la información de preparación e imágenes de forma atractiva y elegante pero 
+            la UX puede ser pobre si por ejemplo no encontramos una categorización para encontrar recetas de postres y otra categoría para 
+            ensaladas. 
+        </p>
+
+        <p>
+            Bien, continuando con el tema, la importancia del diseño responsivo es que permite a las páginas web adaptarse a los tamaños de
+            pantalla y resoluciones y orientación de cada dispositivo dinámicamente. Este concepto surge en el año 2010 de la mano del 
+            diseñador web norteamericano Ethan Marcotte, donde el propone que en lugar de hacer diseños a medida y desconectados 
+            para cada uno de los siempre crecientes dispositivos web, podemos tratarlos como facetas de una misma experiencia.
+        </p>
+        <p>
+            Según Vidal, P. (2020) RWD (por sus siglas en inglés Web Responsive Design) utiliza los llamados puntos de interrupción 
+            para determinar cómo aparecerá el diseño de un producto: un diseño se utiliza sobre un punto de interrupción y otro diseño se 
+            aplica debajo de ese punto. Los puntos de interrupción se basan comúnmente en el ancho del navegador. Ésto hace que en lugar de 
+            crear un producto por separado para cada dispositivo (o resolución) con una base de código correspondiente para cada resolución, 
+            una única base de código admite a los usuarios con vistas de diferentes tamaños. En palabras más técnicas el mismo HTMl y el mismo 
+            código CSS para los diferentes anchos de pantalla ya sean portátiles, tabletas, móviles, equipos de escritorio, etc. Además se 
+            pueden agregar nuevos puntos de interrupción para agregar nuevas vistas en cualquier momento.
+        </p>
+        <p>
+            Entre las ventajas del diseño responsive tenemos según Vidal, P. (2020):
+        </p>
+        <P>
+          <ul>
+            <li>
+              El contenido y la presentación están separados, los estilos están definidos en las CSS y no se usan tablas 
+              para maquetar. Todo ello beneficia a las personas con diferentes discapacidades al permitir 
+              a los agentes de usuario adaptar el contenido de acuerdo a sus necesidades (criterio de conformidad 1.3.1, [WCAG2, 2008])
+            </li>
+            <li>
+              Tendencia a un mayor respeto por los estándares web, lo cual maximizará la compatibilidad con las aplicaciones de usuario actuales 
+              y  futuras, incluyendo las ayudas técnicas (pauta 4.1, [WCAG2, 2008])
+            </li>
+            <li>
+              Tendencia a tener la información estructurada y jerarquizadamás correctamente(criterio de conformidad 1.3.1, [WCAG2, 2008])
+            </li>
+            <li>
+              Tendencia al uso de elementos semánticos para poder definir sus estilos en las CSS. Indicar explícitamente la función 
+              estructural o valor semántico del contenido permitirá que esta información se pueda determinar mediante software 
+              favoreciendo la  accesibilidad (criterio  de conformidad 1.3.1, [WCAG2, 2008])
+            </li>
+            <li>
+              <p>El diseño flexible y la definición de tamaños relativospermiten que el texto se pueda ampliar   sin desbordamientos y hacer zoom con 
+              garantías (criterio de conformidad 1.4.4, [WCAG2, 2008])</p>
+              <p>El tamaño flexible de las imágenes y vídeos permitirá que se adapten mejor al espacio 
+                disponible sin que se superpongan con otros contenidos.</p>
+              <p>
+                Mejor eXperiencia para los usuarios con baja visión que suelen tener resoluciones de pantalla más bajas y suelen ampliar la pantalla.
+              </p>
+            </li>
+            <li>
+              Además, el diseño flexible y que no se usen tablas para maquetar ayuda a garantizar un orden de lectura correcto. 
+              Los diseños fluidos tienden a presentar el contenido en el mismo orden que el DOM y este es el mismo orden en que, por 
+              ejemplo, los lectores de pantalla leerán el contenido (criterio de conformidad 1.3.2, [WCAG2, 2008])
+            </li>
+            <li>
+              <p>Se tiene muy presente que el producto se visualizará en distintos dispositivos y por tanto: </p>
+              <p>Es más probable que el producto no sea operable solo con el ratón, la forma de interactuar ahora es muy variable y esto  ayuda 
+                al diseño inclusivo (principio  Operable, [WCAG2, 2008])</p>
+              <p>
+                Es más probable que se mejore el contraste de color, que suele ser más pobre en los dispositivos móviles ya que bajamos 
+                el brillo para ahorrar batería, además de que son habituales los reflejos en la pantalla (criterios de conformidad 1.4.3 y 1.4.6, [WCAG2, 2008])
+              </p>
+              <p>
+                Mayor uso de la técnicaProgressive Enhancement(Mejora Progresiva) que consiste en una implementación básica, que funciona 
+                a través de múltiples dispositivos y con una amplia  gama de tecnologías de asistencia, añadiendo después más 
+                funcionalidades  para  los  dispositivos que las soportan.
+              </p>
+            </li>
+            <li>
+              Focalizarse solo en lo necesario, priorizar y simplificar, dará como resultado productos más fáciles de navegar y entender, 
+              con menor carga cognitiva y visual, mejorando la legibilidad y la accesibilidad.
+            </li>
+          </ul>
+        </P>
+      </section>
+      <br/>
+      <section>
+        <p>Referencias:</p>
+        <p>Vidal, P. (2020). Experiencia de Usuario + Web Responsivo : Un Estudio desde la Perspectiva de un Enfoque Integrado = User 
+          eXperience + Responsive Web: A Study from the Perspective of an Integrated Approach. Informe Científico Técnico UNPA, 12(. 1), 49–75.
+           https://doi-org.bibliotecavirtual.unad.edu.co/10.22305/ict-unpa.v12.n1.703</p>
+      </section>
+    </main>
+  </div>
+  <footer class="d-flex bg-light flex-column">
+    <p class="p-0 m-0 mx-auto">Universidad Nacional Abierta y a Distancia UNAD de Colombia</p>
+    <p class="p-0 m-0 mx-auto">Institución de Educación Superior sujeta a inspección y vigilancia por el Ministerio de Educación Nacional - SNIES 2102</p>
+    <p class="p-0 m-0 mx-auto">En Bogotá D.C. (Colombia) Tel: (+57)(1)375 9500  Línea gratuita nacional: 01 8000 115223</p>
+    <p class="p-0 m-0 mx-auto"><strong>© Copyright UNAD 2021</strong></p>
+    <p class="p-0 m-0 mx-auto"><a href="https://www.vecteezy.com/free-vector/gradient-banner">Gradient Banner Vectors by Vecteezy</a></p>
+  </footer>
+</body>
+</html>

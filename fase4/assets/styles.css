@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  @font-face {
+    font-family: 'architectsdaughter'; /*a name to be used later*/
+    src: url('fonts/ArchitectsDaughter-Regular.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'luckiest-guy'; /*a name to be used later*/
+    src: url('fonts/LuckiestGuy-Regular.ttf'); /*URL to font*/
+}
+  .menu-area a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: darkviolet; 
+    height: 60px;
+    font-family:Poppins;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+  
+  }
+  .menu-area a:hover{
+    background: #E7B200;
+    color: #fff;
+  }
+  .menu-area ul{
+    list-style: none;
+    display: flex;
+  }
+  .menu-area li{
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+  .menu-area li:hover .dropdown-1 > li{
+    display: block;
+    top: 0;
+  }
+  .dropdown-1 li{
+    display: none;
+    position: relative;
+  }
+  .dropdown-1{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .dropdown-1 li:hover .dropdown-2 li{
+    display: block;
+  }
+  .dropdown-2 li{
+    display: none;
+  }
+  .dropdown-2{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+  }
+  .page-content{
+      margin: 0 auto;
+      max-width: 1200px;
+      width: 100%;
+      padding-top: 10px;
+      display: flex;
+      font-family: 'architectsdaughter';
+      font-size: large;
+  }
+  .page-content aside{
+      width: 10%;
+  }
+  .page-content main{
+      width: 90%;
+  }
+  footer a{
+      color: black;
+  }
+  footer a:hover{
+      cursor: pointer;
+  }
+  header{
+        height: 80px;
+        background-image: url('images/abstract_gradient_blur_banner_1810.jpg');
+        background-size:     cover;                      /* <------ */
+        background-repeat:   no-repeat;
+        background-position: center center; 
+  }
+  header h1{
+      padding-left: 60px;
+      padding-top: 20px;
+      font-family: 'luckiest-guy';
+      text-shadow: 1px 1px 2px white;
+  }
+  main section h2{
+      font-family: 'luckiest-guy';
+  }
+  section p,article p{
+      margin-top: 8px;
+      text-align: justify;
+  }
+  .social-links a:hover{
+    cursor: pointer;
+  }
+  .social-links p{
+      color: orangered;
+  }
